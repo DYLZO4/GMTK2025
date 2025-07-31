@@ -16,27 +16,37 @@ int main() {
   anchors.emplace_back(sf::Vector2f(400.f, 400.f));
   anchors.emplace_back(sf::Vector2f(600.f, 200.f));
   anchors.emplace_back(sf::Vector2f(200.f, 500.f));
+  anchors.emplace_back(sf::Vector2f(50.f, 100.f));
+  anchors.emplace_back(sf::Vector2f(350.f, 75.f));
 
   // Create Player
   Player player({100.f, 100.f});
-
+  player.setVelocity({50.f, 0});
+  sf::Clock clock;
   // Main loop
   while (window.isOpen()) {
+    const AnchorPoint *nearby =
+        findNearestAnchor(anchors, player.getPosition(), 150.0f);
+    window.clear();
 
+    float dt =
+        clock.restart()
+            .asSeconds(); // gets time since last restart and restarts the clock
+    player.update(dt);
     while (const std::optional event = window.pollEvent()) {
       // Close window: exit
       if (event->is<sf::Event::Closed>())
         window.close();
 
       if (auto *key = event->getIf<sf::Event::KeyPressed>()) {
-        if (key->scancode == sf::Keyboard::Scancode::Space) {
+        if (key->scancode == sf::Keyboard::Scancode::Space && nearby) {
           player.toggleAttach();
+          if (player.isAttached()) {
+            player.attachTo(nearby->getPosition());
+          }
         }
       }
     }
-    const AnchorPoint *nearby =
-        findNearestAnchor(anchors, player.getPosition(), 800.0f);
-    window.clear();
 
     if (nearby) {
       std::array<sf::Vertex, 2> line = {
@@ -50,7 +60,6 @@ int main() {
     for (const auto &anchor : anchors) {
       anchor.draw(window);
     }
-
     window.display();
   }
 
