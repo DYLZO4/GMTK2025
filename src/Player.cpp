@@ -25,3 +25,8 @@ void Player::detach() { attached = false; }
 void Player::toggleAttach() { attached = !attached; }
 
 bool Player::isAttached() const { return attached; }
+
+void update(float dt) {
+}
+
+void attachTo(sf::Vector2f anchorPos);

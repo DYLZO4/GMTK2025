@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/dylan/git/GMTK2025/include
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -g -std=gnu++20
 

@@ -1,1 +1,1 @@
-/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/my_program.dir/link.d CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o CMakeFiles/my_program.dir/src/Player.cpp.o CMakeFiles/my_program.dir/main.cpp.o -o my_program  -lsfml-graphics -lsfml-window -lsfml-system
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/my_program.dir/link.d CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o CMakeFiles/my_program.dir/src/Player.cpp.o CMakeFiles/my_program.dir/src/Utils.cpp.o CMakeFiles/my_program.dir/main.cpp.o -o my_program  -lsfml-graphics -lsfml-window -lsfml-system

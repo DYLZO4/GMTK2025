@@ -201,6 +201,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Utils.o: src/Utils.cpp.o
+.PHONY : src/Utils.o
+
+# target to build an object file
+src/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Utils.cpp.o
+.PHONY : src/Utils.cpp.o
+
+src/Utils.i: src/Utils.cpp.i
+.PHONY : src/Utils.i
+
+# target to preprocess a source file
+src/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Utils.cpp.i
+.PHONY : src/Utils.cpp.i
+
+src/Utils.s: src/Utils.cpp.s
+.PHONY : src/Utils.s
+
+# target to generate assembly for a file
+src/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Utils.cpp.s
+.PHONY : src/Utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Utils.o"
+	@echo "... src/Utils.i"
+	@echo "... src/Utils.s"
 .PHONY : help
 
 

@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o.d"
   "CMakeFiles/my_program.dir/src/Player.cpp.o"
   "CMakeFiles/my_program.dir/src/Player.cpp.o.d"
+  "CMakeFiles/my_program.dir/src/Utils.cpp.o"
+  "CMakeFiles/my_program.dir/src/Utils.cpp.o.d"
   "my_program"
   "my_program.pdb"
 )
