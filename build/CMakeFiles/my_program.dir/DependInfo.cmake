@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dylan/git/GMTK2025/main.cpp" "CMakeFiles/my_program.dir/main.cpp.o" "gcc" "CMakeFiles/my_program.dir/main.cpp.o.d"
   "/home/dylan/git/GMTK2025/src/AnchorPoint.cpp" "CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o" "gcc" "CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o.d"
+  "/home/dylan/git/GMTK2025/src/Player.cpp" "CMakeFiles/my_program.dir/src/Player.cpp.o" "gcc" "CMakeFiles/my_program.dir/src/Player.cpp.o.d"
   "" "my_program" "gcc" "CMakeFiles/my_program.dir/link.d"
   )
 
