@@ -13,15 +13,14 @@ int main() {
   std::vector<AnchorPoint> anchors;
 
   // Add some anchors to the vector
-  anchors.emplace_back(sf::Vector2f(400.f, 400.f));
-  anchors.emplace_back(sf::Vector2f(600.f, 200.f));
-  anchors.emplace_back(sf::Vector2f(200.f, 500.f));
-  anchors.emplace_back(sf::Vector2f(50.f, 100.f));
-  anchors.emplace_back(sf::Vector2f(350.f, 75.f));
-
+  anchors.emplace_back(sf::Vector2f(window_x / 2.f, window_y / 2.f));
+  anchors.emplace_back(sf::Vector2f(window_x / 4.f, window_y / 4.f));
+  anchors.emplace_back(sf::Vector2f(window_x * 3 / 4.f, window_y / 4.f));
+  anchors.emplace_back(sf::Vector2f(window_x / 4.f, window_y * 3 / 4.f));
+  anchors.emplace_back(sf::Vector2f(window_x * 3 / 4.f, window_y * 3 / 4.f));
   // Create Player
   Player player({100.f, 100.f});
-  player.setVelocity({50.f, 0});
+  player.setVelocity({100.f, 0});
   sf::Clock clock;
   // Main loop
   while (window.isOpen()) {
@@ -32,7 +31,11 @@ int main() {
     float dt =
         clock.restart()
             .asSeconds(); // gets time since last restart and restarts the clock
-    player.update(dt);
+    //Outer Bounds
+    if(player.getPosition().x > window_x){
+    }
+
+    player.update(dt, window_x, window_y);
     while (const std::optional event = window.pollEvent()) {
       // Close window: exit
       if (event->is<sf::Event::Closed>())

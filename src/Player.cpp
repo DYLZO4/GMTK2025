@@ -1,7 +1,7 @@
 #include "Player.hpp"
+#include "AnchorPoint.hpp"
 #include <SFML/System/Vector2.hpp>
 #include <cmath>
-#include "AnchorPoint.hpp"
 
 Player::Player(sf::Vector2f startPos, float r)
     : position(startPos), radius(r), attached(false) {
@@ -27,26 +27,33 @@ void Player::detach() { attached = false; }
 void Player::toggleAttach() { attached = !attached; }
 
 bool Player::isAttached() const { return attached; }
-void Player::setVelocity(sf::Vector2f v){
-  velocity = v;
-}
-void Player::update(float dt) {
+void Player::setVelocity(sf::Vector2f v) { velocity = v; }
+void Player::update(float dt, unsigned screen_x, unsigned screen_y) {
+  if (position.x + radius > screen_x || position.x - radius < 0) {
+    velocity.x = velocity.x * -1;
+  }
+  if (position.y + radius > screen_y || position.y - radius < 0) {
+    velocity.y = velocity.y * -1;
+  }
+
   if (!attached) {
     position += velocity * dt;
     shape.setPosition(position);
-  } else{
-     angle += rotationDirection * angularSpeed * dt;
+  } else {
+    angle += rotationDirection * angularSpeed * dt;
 
     position.x = anchorPosition.x + orbitRadius * std::cos(angle);
     position.y = anchorPosition.y + orbitRadius * std::sin(angle);
     shape.setPosition(position);
     // Compute tangential velocity
-    velocity.x = -rotationDirection * orbitRadius * angularSpeed * std::sin(angle);
-    velocity.y = rotationDirection * orbitRadius * angularSpeed * std::cos(angle);
+    velocity.x =
+        -rotationDirection * orbitRadius * angularSpeed * std::sin(angle);
+    velocity.y =
+        rotationDirection * orbitRadius * angularSpeed * std::cos(angle);
   }
 }
 
-void Player::attachTo(sf::Vector2f anchorPos){
+void Player::attachTo(sf::Vector2f anchorPos) {
   anchorPosition = anchorPos;
   attached = true;
   sf::Vector2f diff = position - anchorPosition;

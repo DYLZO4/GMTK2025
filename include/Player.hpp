@@ -2,6 +2,7 @@
 #include "AnchorPoint.hpp"
 #include <SFML/Graphics.hpp>
 #include <SFML/System/Vector2.hpp>
+#include <filesystem>
 
 class Player {
 private:
@@ -12,7 +13,7 @@ private:
   sf::Vector2f velocity;
   sf::Vector2f anchorPosition;
   float orbitRadius;
-  float angularSpeed = 2.f;
+  float angularSpeed = 5.f;
   float angle = 0.f;
   int rotationDirection;
 
@@ -27,7 +28,7 @@ public:
   void attach();
   void detach();
   bool isAttached() const;
-  void update(float dt);
+  void update(float dt, unsigned screen_x, unsigned screen_y);
   void attachTo(sf::Vector2f anchorPos);
   void setVelocity(sf::Vector2f velocity);
   void toggleAttach(); // Called on spacebar press
