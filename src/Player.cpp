@@ -53,12 +53,24 @@ void Player::update(float dt, unsigned screen_x, unsigned screen_y) {
   }
 }
 
-void Player::attachTo(sf::Vector2f anchorPos) {
-  anchorPosition = anchorPos;
-  attached = true;
-  sf::Vector2f diff = position - anchorPosition;
-  angle = std::atan2(diff.y, diff.x);
-  orbitRadius = std::sqrt(diff.x * diff.x + diff.y * diff.y);
-  float cross = diff.x * velocity.y - diff.y * velocity.x;
-  rotationDirection = (cross >= 0) ? 1 : -1;
+void Player::attachTo() {
+
+    attached = true;
+    sf::Vector2f diff = position - anchorPosition;
+    angle = std::atan2(diff.y, diff.x);
+    orbitRadius = std::sqrt(diff.x * diff.x + diff.y * diff.y);
+    float cross = diff.x * velocity.y - diff.y * velocity.x;
+    rotationDirection = (cross >= 0) ? 1 : -1;
+}
+
+void Player::setAnchor(const AnchorPoint* anchor){
+    anchorPosition = anchor->getPosition();
+}
+
+void Player::setCanAnchor(bool can){
+  canAnchor = can;
+}
+
+bool Player::getCanAnchor(){
+  return canAnchor;
 }

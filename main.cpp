@@ -1,68 +1,26 @@
-#include "AnchorPoint.hpp"
-#include "Player.hpp"
-#include "Utils.hpp"
+#include "PlayState.hpp"
 #include <SFML/Graphics.hpp>
+#include <optional>
+
 int main() {
-
-  // Render Window
-  unsigned window_x = 800;
-  unsigned window_y = 800;
+  unsigned int window_x = 800;
+  unsigned int window_y = 800;
   sf::RenderWindow window(sf::VideoMode({window_x, window_y}), "Loop");
+  window.setFramerateLimit(60);
 
-  // Create an Anchor Point
-  std::vector<AnchorPoint> anchors;
+  PlayState playState(window_x, window_y);
+  sf::Clock frameClock;
 
-  // Add some anchors to the vector
-  anchors.emplace_back(sf::Vector2f(window_x / 2.f, window_y / 2.f));
-  anchors.emplace_back(sf::Vector2f(window_x / 4.f, window_y / 4.f));
-  anchors.emplace_back(sf::Vector2f(window_x * 3 / 4.f, window_y / 4.f));
-  anchors.emplace_back(sf::Vector2f(window_x / 4.f, window_y * 3 / 4.f));
-  anchors.emplace_back(sf::Vector2f(window_x * 3 / 4.f, window_y * 3 / 4.f));
-  // Create Player
-  Player player({100.f, 100.f});
-  player.setVelocity({100.f, 0});
-  sf::Clock clock;
-  // Main loop
   while (window.isOpen()) {
-    const AnchorPoint *nearby =
-        findNearestAnchor(anchors, player.getPosition(), 150.0f);
-    window.clear();
-
-    float dt =
-        clock.restart()
-            .asSeconds(); // gets time since last restart and restarts the clock
-    //Outer Bounds
-    if(player.getPosition().x > window_x){
-    }
-
-    player.update(dt, window_x, window_y);
     while (const std::optional event = window.pollEvent()) {
-      // Close window: exit
-      if (event->is<sf::Event::Closed>())
-        window.close();
-
-      if (auto *key = event->getIf<sf::Event::KeyPressed>()) {
-        if (key->scancode == sf::Keyboard::Scancode::Space && nearby) {
-          player.toggleAttach();
-          if (player.isAttached()) {
-            player.attachTo(nearby->getPosition());
-          }
-        }
-      }
+      playState.handleEvent(window, event);
     }
 
-    if (nearby) {
-      std::array<sf::Vertex, 2> line = {
-          sf::Vertex(player.getPosition(), sf::Color::Blue),
-          sf::Vertex(nearby->getPosition(), sf::Color::Blue),
-      };
-      window.draw(line.data(), line.size(), sf::PrimitiveType::Lines);
-    }
-    // Draw the anchor point
-    player.draw(window);
-    for (const auto &anchor : anchors) {
-      anchor.draw(window);
-    }
+    float dt = frameClock.restart().asSeconds();
+    playState.update(window, dt);
+
+    window.clear();
+    playState.draw(window);
     window.display();
   }
 

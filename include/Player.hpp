@@ -16,6 +16,7 @@ private:
   float angularSpeed = 5.f;
   float angle = 0.f;
   int rotationDirection;
+  bool canAnchor;
 
 public:
   Player(sf::Vector2f startPos, float r = 10.0f);
@@ -29,7 +30,10 @@ public:
   void detach();
   bool isAttached() const;
   void update(float dt, unsigned screen_x, unsigned screen_y);
-  void attachTo(sf::Vector2f anchorPos);
+  void attachTo();
   void setVelocity(sf::Vector2f velocity);
   void toggleAttach(); // Called on spacebar press
+  void setAnchor(const AnchorPoint* anchor);
+  void setCanAnchor(bool canAnchor);
+  bool getCanAnchor();
 };

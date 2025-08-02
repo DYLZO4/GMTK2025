@@ -177,6 +177,54 @@ src/AnchorPoint.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/AnchorPoint.cpp.s
 .PHONY : src/AnchorPoint.cpp.s
 
+src/MenuState.o: src/MenuState.cpp.o
+.PHONY : src/MenuState.o
+
+# target to build an object file
+src/MenuState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/MenuState.cpp.o
+.PHONY : src/MenuState.cpp.o
+
+src/MenuState.i: src/MenuState.cpp.i
+.PHONY : src/MenuState.i
+
+# target to preprocess a source file
+src/MenuState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/MenuState.cpp.i
+.PHONY : src/MenuState.cpp.i
+
+src/MenuState.s: src/MenuState.cpp.s
+.PHONY : src/MenuState.s
+
+# target to generate assembly for a file
+src/MenuState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/MenuState.cpp.s
+.PHONY : src/MenuState.cpp.s
+
+src/PlayState.o: src/PlayState.cpp.o
+.PHONY : src/PlayState.o
+
+# target to build an object file
+src/PlayState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/PlayState.cpp.o
+.PHONY : src/PlayState.cpp.o
+
+src/PlayState.i: src/PlayState.cpp.i
+.PHONY : src/PlayState.i
+
+# target to preprocess a source file
+src/PlayState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/PlayState.cpp.i
+.PHONY : src/PlayState.cpp.i
+
+src/PlayState.s: src/PlayState.cpp.s
+.PHONY : src/PlayState.s
+
+# target to generate assembly for a file
+src/PlayState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/PlayState.cpp.s
+.PHONY : src/PlayState.cpp.s
+
 src/Player.o: src/Player.cpp.o
 .PHONY : src/Player.o
 
@@ -200,6 +248,30 @@ src/Player.s: src/Player.cpp.s
 src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
+
+src/StateManager.o: src/StateManager.cpp.o
+.PHONY : src/StateManager.o
+
+# target to build an object file
+src/StateManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/StateManager.cpp.o
+.PHONY : src/StateManager.cpp.o
+
+src/StateManager.i: src/StateManager.cpp.i
+.PHONY : src/StateManager.i
+
+# target to preprocess a source file
+src/StateManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/StateManager.cpp.i
+.PHONY : src/StateManager.cpp.i
+
+src/StateManager.s: src/StateManager.cpp.s
+.PHONY : src/StateManager.s
+
+# target to generate assembly for a file
+src/StateManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/StateManager.cpp.s
+.PHONY : src/StateManager.cpp.s
 
 src/Utils.o: src/Utils.cpp.o
 .PHONY : src/Utils.o
@@ -240,9 +312,18 @@ help:
 	@echo "... src/AnchorPoint.o"
 	@echo "... src/AnchorPoint.i"
 	@echo "... src/AnchorPoint.s"
+	@echo "... src/MenuState.o"
+	@echo "... src/MenuState.i"
+	@echo "... src/MenuState.s"
+	@echo "... src/PlayState.o"
+	@echo "... src/PlayState.i"
+	@echo "... src/PlayState.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/StateManager.o"
+	@echo "... src/StateManager.i"
+	@echo "... src/StateManager.s"
 	@echo "... src/Utils.o"
 	@echo "... src/Utils.i"
 	@echo "... src/Utils.s"
