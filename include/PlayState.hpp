@@ -28,4 +28,8 @@ private:
   unsigned int score = 0;
   sf::Font font;
   sf::Text scoreText;
+  sf::Text speedText;
+  sf::Text livesText;
+  float spawnTimer;
+  float spawnInterval=5.f;
 };

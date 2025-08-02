@@ -41,9 +41,10 @@ void Player::update(float dt, unsigned screen_x, unsigned screen_y) {
     position += velocity * dt;
     shape.setPosition(position);
   } else {
-    float maxBoost = 10.0f;
-    float boost = std::min(speedBoostFactor / (orbitRadius + 1.0f), maxBoost);
-    angularSpeed += boost * dt;
+    float boostedSpeed = baseSpeed + speedBoostFactor / (orbitRadius + 1.0f);
+    if (boostedSpeed > angularSpeed) {
+      angularSpeed = boostedSpeed;
+    }
     angle += rotationDirection * angularSpeed * dt;
 
     position.x = anchorPosition.x + orbitRadius * std::cos(angle);
@@ -67,7 +68,7 @@ void Player::attachTo() {
   float cross = diff.x * velocity.y - diff.y * velocity.x;
   rotationDirection = (cross >= 0) ? 1 : -1;
 
-  float speed = std::sqrt(velocity.x * velocity.x +velocity.y * velocity.y);
+  float speed = std::sqrt(velocity.x * velocity.x + velocity.y * velocity.y);
   angularSpeed = speed / orbitRadius;
 }
 
@@ -78,13 +79,3 @@ void Player::setAnchor(const AnchorPoint *anchor) {
 void Player::setCanAnchor(bool can) { canAnchor = can; }
 
 bool Player::getCanAnchor() { return canAnchor; }
-
-float Player::getRadius(){ return radius; }
-
-float Player::getSpeed(){ return std::sqrt(velocity.x * velocity.x +velocity.y * velocity.y);}
-
-sf::Vector2f Player::getVelocity(){ return velocity;}
-
-int Player::getLives(){return lives;}
-void Player::removeLives(int amount){lives-=amount;}
-
