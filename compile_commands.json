@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/Alien.cpp.o -c /home/dylan/git/GMTK2025/src/Alien.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/Alien.cpp",
+  "output": "CMakeFiles/my_program.dir/src/Alien.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o -c /home/dylan/git/GMTK2025/src/AnchorPoint.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/AnchorPoint.cpp",
+  "output": "CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/MenuState.cpp.o -c /home/dylan/git/GMTK2025/src/MenuState.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/MenuState.cpp",
+  "output": "CMakeFiles/my_program.dir/src/MenuState.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/PlayState.cpp.o -c /home/dylan/git/GMTK2025/src/PlayState.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/PlayState.cpp",
+  "output": "CMakeFiles/my_program.dir/src/PlayState.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/Player.cpp.o -c /home/dylan/git/GMTK2025/src/Player.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/Player.cpp",
+  "output": "CMakeFiles/my_program.dir/src/Player.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/StateManager.cpp.o -c /home/dylan/git/GMTK2025/src/StateManager.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/StateManager.cpp",
+  "output": "CMakeFiles/my_program.dir/src/StateManager.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/Utils.cpp.o -c /home/dylan/git/GMTK2025/src/Utils.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/Utils.cpp",
+  "output": "CMakeFiles/my_program.dir/src/Utils.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/main.cpp.o -c /home/dylan/git/GMTK2025/main.cpp",
+  "file": "/home/dylan/git/GMTK2025/main.cpp",
+  "output": "CMakeFiles/my_program.dir/main.cpp.o"
+}
+]

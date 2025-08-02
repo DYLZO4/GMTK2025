@@ -6,7 +6,7 @@
 Player::Player(sf::Vector2f startPos, float r)
     : position(startPos), radius(r), attached(false) {
   shape.setRadius(radius);
-  shape.setFillColor(sf::Color::Red);
+  shape.setFillColor(sf::Color::Green);
   shape.setOrigin({radius, radius}); // center origin
   shape.setPosition(position);
 }

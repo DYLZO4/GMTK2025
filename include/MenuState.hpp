@@ -1,4 +1,3 @@
-// MenuState.hpp
 #pragma once
 #include "GameState.hpp"
 

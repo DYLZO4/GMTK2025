@@ -5,7 +5,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 20)
 
 # Gather all .cpp files from src/
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 # Add main.cpp manually if it's in the root directory
 list(APPEND SOURCES ${CMAKE_SOURCE_DIR}/main.cpp)
