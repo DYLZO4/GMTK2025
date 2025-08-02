@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Alien.o: src/Alien.cpp.o
+.PHONY : src/Alien.o
+
+# target to build an object file
+src/Alien.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Alien.cpp.o
+.PHONY : src/Alien.cpp.o
+
+src/Alien.i: src/Alien.cpp.i
+.PHONY : src/Alien.i
+
+# target to preprocess a source file
+src/Alien.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Alien.cpp.i
+.PHONY : src/Alien.cpp.i
+
+src/Alien.s: src/Alien.cpp.s
+.PHONY : src/Alien.s
+
+# target to generate assembly for a file
+src/Alien.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/Alien.cpp.s
+.PHONY : src/Alien.cpp.s
+
 src/AnchorPoint.o: src/AnchorPoint.cpp.o
 .PHONY : src/AnchorPoint.o
 
@@ -309,6 +333,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Alien.o"
+	@echo "... src/Alien.i"
+	@echo "... src/Alien.s"
 	@echo "... src/AnchorPoint.o"
 	@echo "... src/AnchorPoint.i"
 	@echo "... src/AnchorPoint.s"
