@@ -1,4 +1,3 @@
-// StateManager.cpp
 #include "StateManager.hpp"
 
 void StateManager::pushState(std::unique_ptr<GameState> state) {

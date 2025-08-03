@@ -1,6 +1,5 @@
-#include "PlayState.hpp"
-#include "StateManager.hpp"
 #include "MenuState.hpp"
+#include "StateManager.hpp"
 #include <SFML/Graphics.hpp>
 #include <optional>
 
@@ -16,7 +15,28 @@ int main() {
   while (window.isOpen()) {
     GameState *currentState = stateManager.getCurrentState();
     if (!currentState)
-      break; // exit if no state is active
+      break;
+
+    if (auto transition = currentState->getRequestedTransition()) {
+      switch (transition->action) {
+      case StateAction::Push:
+        stateManager.pushState(std::move(transition->newState));
+        currentState->clearRequestedTransition();
+        break;
+      case StateAction::Pop:
+        stateManager.popState();
+        currentState->clearRequestedTransition();
+        break;
+      case StateAction::Change:
+        stateManager.changeState(std::move(transition->newState));
+        break;
+      case StateAction::None:
+      default:
+        break;
+      }
+      continue; // skip update/draw this frame because state changed
+    }
+
     while (const std::optional event = window.pollEvent()) {
       currentState->handleEvent(window, event);
     }
@@ -27,22 +47,6 @@ int main() {
     window.clear();
     currentState->draw(window);
     window.display();
-    if (auto transition = currentState->getRequestedTransition()) {
-      switch (transition->action) {
-      case StateAction::Push:
-        stateManager.pushState(std::move(transition->newState));
-        break;
-      case StateAction::Pop:
-        stateManager.popState();
-        break;
-      case StateAction::Change:
-        stateManager.changeState(std::move(transition->newState));
-        break;
-      case StateAction::None:
-      default:
-        break;
-      }
-    }
   }
 
   return 0;

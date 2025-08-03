@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/dylan/git/GMTK2025",
+  "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/GameOverState.cpp.o -c /home/dylan/git/GMTK2025/src/GameOverState.cpp",
+  "file": "/home/dylan/git/GMTK2025/src/GameOverState.cpp",
+  "output": "CMakeFiles/my_program.dir/src/GameOverState.cpp.o"
+},
+{
+  "directory": "/home/dylan/git/GMTK2025",
   "command": "/usr/bin/c++  -I/home/dylan/git/GMTK2025/include -g -std=gnu++20 -o CMakeFiles/my_program.dir/src/MenuState.cpp.o -c /home/dylan/git/GMTK2025/src/MenuState.cpp",
   "file": "/home/dylan/git/GMTK2025/src/MenuState.cpp",
   "output": "CMakeFiles/my_program.dir/src/MenuState.cpp.o"

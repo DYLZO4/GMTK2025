@@ -18,8 +18,9 @@ public:
                    const std::optional<sf::Event> &event) override;
   void update(sf::RenderWindow &window, float dt) override;
   void draw(sf::RenderWindow &window) override;
+  
   std::optional<StateTransition> getRequestedTransition() override;
-void clearRequestedTransition() override;
+  void clearRequestedTransition() override;
 
 private:
   std::optional<StateTransition> requested;
@@ -35,5 +36,5 @@ private:
   sf::Text speedText;
   sf::Text livesText;
   float spawnTimer;
-  float spawnInterval=3.f;
+  float spawnInterval = 3.f;
 };

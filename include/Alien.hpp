@@ -17,8 +17,8 @@ public:
   void addVelocity(const sf::Vector2f &dv);
 
 private:
-  sf::CircleShape shape; // The visual representation of the AI
-  float speed;           // Movement speed in pixels per second
+  sf::CircleShape shape;
+  float speed;
   float radius;
   sf::Vector2f velocity{0.f, 0.f};
 };

@@ -15,12 +15,11 @@ void Alien::update(const sf::Vector2f &playerPos, float deltaTime) {
 
   float distance = std::sqrt(direction.x * direction.x + direction.y * direction.y);
   if (distance > 0.1f) {
-    direction /= distance; // Normalize
+    direction /= distance; 
     // Accelerate toward player
     sf::Vector2f desiredVelocity = direction * speed;
 
-    // Simple steering: accelerate velocity toward desired velocity
-    float steeringStrength = 5.f; // tweak for smoothness
+    float steeringStrength = 5.f; 
     sf::Vector2f steering = desiredVelocity - velocity;
     velocity += steering * steeringStrength * deltaTime;
 

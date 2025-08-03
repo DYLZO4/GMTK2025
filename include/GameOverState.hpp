@@ -3,13 +3,15 @@
 #include <SFML/Graphics/Font.hpp>
 #include <SFML/Graphics/Text.hpp>
 
-class MenuState : public GameState {
+class GameOverState : public GameState {
 private:
   std::optional<StateTransition> requested;
-  sf::Text startText;
+  sf::Text gameOverText;
+  sf::Text scoreText;
   sf::Font font;
+
 public:
-  MenuState();
+  GameOverState(unsigned int score);
   void handleEvent(sf::RenderWindow &window,
                    const std::optional<sf::Event> &event) override;
   void update(sf::RenderWindow &window, float dt) override;

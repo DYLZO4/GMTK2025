@@ -201,6 +201,30 @@ src/AnchorPoint.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/AnchorPoint.cpp.s
 .PHONY : src/AnchorPoint.cpp.s
 
+src/GameOverState.o: src/GameOverState.cpp.o
+.PHONY : src/GameOverState.o
+
+# target to build an object file
+src/GameOverState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/GameOverState.cpp.o
+.PHONY : src/GameOverState.cpp.o
+
+src/GameOverState.i: src/GameOverState.cpp.i
+.PHONY : src/GameOverState.i
+
+# target to preprocess a source file
+src/GameOverState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/GameOverState.cpp.i
+.PHONY : src/GameOverState.cpp.i
+
+src/GameOverState.s: src/GameOverState.cpp.s
+.PHONY : src/GameOverState.s
+
+# target to generate assembly for a file
+src/GameOverState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/GameOverState.cpp.s
+.PHONY : src/GameOverState.cpp.s
+
 src/MenuState.o: src/MenuState.cpp.o
 .PHONY : src/MenuState.o
 
@@ -339,6 +363,9 @@ help:
 	@echo "... src/AnchorPoint.o"
 	@echo "... src/AnchorPoint.i"
 	@echo "... src/AnchorPoint.s"
+	@echo "... src/GameOverState.o"
+	@echo "... src/GameOverState.i"
+	@echo "... src/GameOverState.s"
 	@echo "... src/MenuState.o"
 	@echo "... src/MenuState.i"
 	@echo "... src/MenuState.s"

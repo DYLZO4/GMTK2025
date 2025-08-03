@@ -1,15 +1,14 @@
 #include "PlayState.hpp"
+#include "GameOverState.hpp"
 #include "Utils.hpp"
 #include <cmath>
 #include <iostream>
 #include <string>
 
-// Constructor: initialize window size and player + anchors
 PlayState::PlayState(unsigned int windowWidth, unsigned int windowHeight)
     : window_x(windowWidth), window_y(windowHeight),
       player({100.f, 100.f}), // initialize player position here
       scoreText(font), speedText(font), livesText(font) {
-  // Load font
   if (!font.openFromFile("assets/fonts/PressStart2P-Regular.ttf")) {
     std::cerr << "Error loading font\n";
   }
@@ -22,10 +21,9 @@ PlayState::PlayState(unsigned int windowWidth, unsigned int windowHeight)
 
   livesText.setCharacterSize(24);
   livesText.setFillColor(sf::Color::White);
-  livesText.setPosition({10.f, 150.f});
+  livesText.setPosition({10.f, 90.f});
   player.setVelocity({100.f, 0.f});
 
-  // Add some anchors
   anchors.emplace_back(sf::Vector2f(window_x / 2.f, window_y / 2.f));
   anchors.emplace_back(sf::Vector2f(window_x / 4.f, window_y / 4.f));
   anchors.emplace_back(sf::Vector2f(window_x * 3 / 4.f, window_y / 4.f));
@@ -33,7 +31,6 @@ PlayState::PlayState(unsigned int windowWidth, unsigned int windowHeight)
   anchors.emplace_back(sf::Vector2f(window_x * 3 / 4.f, window_y * 3 / 4.f));
 }
 
-// Handle events, e.g. keyboard, window close
 void PlayState::handleEvent(sf::RenderWindow &window,
                             const std::optional<sf::Event> &event) {
   if (!event.has_value())
@@ -56,7 +53,6 @@ void PlayState::handleEvent(sf::RenderWindow &window,
     }
   }
 }
-// Update the game state each frame
 void PlayState::update(sf::RenderWindow &window, float dt) {
   spawnTimer += dt;
   if (spawnTimer >= spawnInterval) {
@@ -110,12 +106,15 @@ void PlayState::update(sf::RenderWindow &window, float dt) {
 
       if (playerSpeed > 700.0f) {
         score += 50;
-        it = aliens.erase(it); // safely erase alien and continue
+        it = aliens.erase(it);
       } else {
         player.removeLives(1);
         if (player.getLives() < 1) {
-          // TODO: switch to game over state
+          requested = StateTransition{
+              .action = StateAction::Change,
+              .newState = std::make_unique<GameOverState>(score)};
         }
+
         sf::Vector2f diff = player.getPosition() - it->getPosition();
         float length = std::sqrt(diff.x * diff.x + diff.y * diff.y);
         if (length != 0) {
@@ -145,7 +144,6 @@ void PlayState::update(sf::RenderWindow &window, float dt) {
   livesText.setString("Lives: " + std::to_string(player.getLives()));
 }
 
-// Draw the game objects
 void PlayState::draw(sf::RenderWindow &window) {
 
   const AnchorPoint *nearby =
@@ -178,8 +176,8 @@ std::optional<StateTransition> PlayState::getRequestedTransition() {
   return std::move(requested);
 }
 
-void PlayState::clearRequestedTransition() { 
+void PlayState::clearRequestedTransition() {
   if (requested.has_value()) {
-        requested.reset();
-    }
+    requested.reset();
+  }
 }

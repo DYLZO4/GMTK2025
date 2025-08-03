@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -223,15 +223,6 @@ MyAnchorProject_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 MyAnchorProject_SOURCE_DIR:STATIC=/home/dylan/git/GMTK2025
-
-//Value Computed by CMake
-MyProject_BINARY_DIR:STATIC=/home/dylan/git/GMTK2025/build
-
-//Value Computed by CMake
-MyProject_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-MyProject_SOURCE_DIR:STATIC=/home/dylan/git/GMTK2025
 
 
 ########################

@@ -48,7 +48,6 @@ sf::Vector2f getOffscreenSpawnPosition(unsigned screenWidth, unsigned screenHeig
     return sf::Vector2f(0.f, 0.f); // fallback
 }
 sf::Vector2f bounceVelocity(const sf::Vector2f& velocity, const sf::Vector2f& normal) {
-    // Reflect velocity vector: V' = V - 2(V ⋅ N)N
     float dot = velocity.x * normal.x + velocity.y * normal.y;
     return velocity - 2.f * dot * normal;
 }

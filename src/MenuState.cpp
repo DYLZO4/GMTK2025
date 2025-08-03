@@ -2,7 +2,15 @@
 #include "PlayState.hpp"
 #include <iostream>
 
-// Handle events, e.g. keyboard, window close
+MenuState::MenuState() : startText(font) {
+  if (!font.openFromFile("assets/fonts/PressStart2P-Regular.ttf")) {
+    std::cerr << "Error loading font\n";
+  }
+  startText.setCharacterSize(24);
+  startText.setFillColor(sf::Color::White);
+  startText.setPosition({10.f, 400.f});
+  startText.setString("Press Space to Start");
+}
 void MenuState::handleEvent(sf::RenderWindow &window,
                             const std::optional<sf::Event> &event) {
   if (!event.has_value())
@@ -22,12 +30,9 @@ void MenuState::handleEvent(sf::RenderWindow &window,
   }
 }
 
-void MenuState::update(sf::RenderWindow &window, float dt) {
-  // Update menu logic (animations, selection, etc.)
-}
+void MenuState::update(sf::RenderWindow &window, float dt) {}
 
-void MenuState::draw(sf::RenderWindow &window) {
-}
+void MenuState::draw(sf::RenderWindow &window) { window.draw(startText); }
 
 std::optional<StateTransition> MenuState::getRequestedTransition() {
   return std::move(requested);
