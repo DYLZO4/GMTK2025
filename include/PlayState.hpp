@@ -18,8 +18,12 @@ public:
                    const std::optional<sf::Event> &event) override;
   void update(sf::RenderWindow &window, float dt) override;
   void draw(sf::RenderWindow &window) override;
+  std::optional<StateTransition> getRequestedTransition() override;
+void clearRequestedTransition() override;
 
 private:
+  std::optional<StateTransition> requested;
+
   unsigned int window_x, window_y;
   std::vector<AnchorPoint> anchors;
   std::vector<Alien> aliens;
@@ -31,5 +35,5 @@ private:
   sf::Text speedText;
   sf::Text livesText;
   float spawnTimer;
-  float spawnInterval=5.f;
+  float spawnInterval=3.f;
 };

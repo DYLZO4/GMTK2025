@@ -15,14 +15,14 @@ PlayState::PlayState(unsigned int windowWidth, unsigned int windowHeight)
   }
   scoreText.setCharacterSize(24);
   scoreText.setFillColor(sf::Color::White);
-  scoreText.setPosition({10.f, 10.f}); 
+  scoreText.setPosition({10.f, 10.f});
   speedText.setCharacterSize(24);
   speedText.setFillColor(sf::Color::White);
-  speedText.setPosition({10.f, 50.f}); 
+  speedText.setPosition({10.f, 50.f});
 
   livesText.setCharacterSize(24);
   livesText.setFillColor(sf::Color::White);
-  livesText.setPosition({10.f, 150.f}); 
+  livesText.setPosition({10.f, 150.f});
   player.setVelocity({100.f, 0.f});
 
   // Add some anchors
@@ -56,7 +56,6 @@ void PlayState::handleEvent(sf::RenderWindow &window,
     }
   }
 }
-
 // Update the game state each frame
 void PlayState::update(sf::RenderWindow &window, float dt) {
   spawnTimer += dt;
@@ -96,7 +95,7 @@ void PlayState::update(sf::RenderWindow &window, float dt) {
     if (count > 0) {
       repulsion *= repulsionStrength;
 
-      aliens[i].addVelocity(repulsion); 
+      aliens[i].addVelocity(repulsion);
     }
   }
 
@@ -113,9 +112,9 @@ void PlayState::update(sf::RenderWindow &window, float dt) {
         score += 50;
         it = aliens.erase(it); // safely erase alien and continue
       } else {
-        player.removeLives(1); 
-        if (player.getLives()<1){ 
-        // TODO: switch to game over state
+        player.removeLives(1);
+        if (player.getLives() < 1) {
+          // TODO: switch to game over state
         }
         sf::Vector2f diff = player.getPosition() - it->getPosition();
         float length = std::sqrt(diff.x * diff.x + diff.y * diff.y);
@@ -173,4 +172,14 @@ void PlayState::draw(sf::RenderWindow &window) {
   window.draw(scoreText);
   window.draw(livesText);
   window.draw(speedText);
+}
+
+std::optional<StateTransition> PlayState::getRequestedTransition() {
+  return std::move(requested);
+}
+
+void PlayState::clearRequestedTransition() { 
+  if (requested.has_value()) {
+        requested.reset();
+    }
 }

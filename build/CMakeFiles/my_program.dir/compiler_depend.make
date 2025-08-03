@@ -5,8 +5,10 @@ CMakeFiles/my_program.dir/main.cpp.o: /home/dylan/git/GMTK2025/main.cpp \
   /home/dylan/git/GMTK2025/include/Alien.hpp \
   /home/dylan/git/GMTK2025/include/AnchorPoint.hpp \
   /home/dylan/git/GMTK2025/include/GameState.hpp \
+  /home/dylan/git/GMTK2025/include/MenuState.hpp \
   /home/dylan/git/GMTK2025/include/PlayState.hpp \
   /home/dylan/git/GMTK2025/include/Player.hpp \
+  /home/dylan/git/GMTK2025/include/StateManager.hpp \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Graphics/BlendMode.hpp \
@@ -198,6 +200,7 @@ CMakeFiles/my_program.dir/main.cpp.o: /home/dylan/git/GMTK2025/main.cpp \
   /usr/include/c++/15.1.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.1.1/bits/cxxabi_forced.h \
   /usr/include/c++/15.1.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15.1.1/bits/deque.tcc \
   /usr/include/c++/15.1.1/bits/enable_special_members.h \
   /usr/include/c++/15.1.1/bits/erase_if.h \
   /usr/include/c++/15.1.1/bits/exception.h \
@@ -259,6 +262,7 @@ CMakeFiles/my_program.dir/main.cpp.o: /home/dylan/git/GMTK2025/main.cpp \
   /usr/include/c++/15.1.1/bits/stl_algobase.h \
   /usr/include/c++/15.1.1/bits/stl_bvector.h \
   /usr/include/c++/15.1.1/bits/stl_construct.h \
+  /usr/include/c++/15.1.1/bits/stl_deque.h \
   /usr/include/c++/15.1.1/bits/stl_function.h \
   /usr/include/c++/15.1.1/bits/stl_heap.h \
   /usr/include/c++/15.1.1/bits/stl_iterator.h \
@@ -267,6 +271,7 @@ CMakeFiles/my_program.dir/main.cpp.o: /home/dylan/git/GMTK2025/main.cpp \
   /usr/include/c++/15.1.1/bits/stl_pair.h \
   /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/15.1.1/bits/stl_relops.h \
+  /usr/include/c++/15.1.1/bits/stl_stack.h \
   /usr/include/c++/15.1.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.1.1/bits/stl_vector.h \
@@ -304,6 +309,7 @@ CMakeFiles/my_program.dir/main.cpp.o: /home/dylan/git/GMTK2025/main.cpp \
   /usr/include/c++/15.1.1/cwctype \
   /usr/include/c++/15.1.1/debug/assertions.h \
   /usr/include/c++/15.1.1/debug/debug.h \
+  /usr/include/c++/15.1.1/deque \
   /usr/include/c++/15.1.1/exception \
   /usr/include/c++/15.1.1/ext/aligned_buffer.h \
   /usr/include/c++/15.1.1/ext/alloc_traits.h \
@@ -333,6 +339,7 @@ CMakeFiles/my_program.dir/main.cpp.o: /home/dylan/git/GMTK2025/main.cpp \
   /usr/include/c++/15.1.1/ratio \
   /usr/include/c++/15.1.1/span \
   /usr/include/c++/15.1.1/sstream \
+  /usr/include/c++/15.1.1/stack \
   /usr/include/c++/15.1.1/stdexcept \
   /usr/include/c++/15.1.1/streambuf \
   /usr/include/c++/15.1.1/string \
@@ -1232,8 +1239,12 @@ CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o: /home/dylan/git/GMTK2025/src/An
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h
 
 CMakeFiles/my_program.dir/src/MenuState.cpp.o: /home/dylan/git/GMTK2025/src/MenuState.cpp \
+  /home/dylan/git/GMTK2025/include/Alien.hpp \
+  /home/dylan/git/GMTK2025/include/AnchorPoint.hpp \
   /home/dylan/git/GMTK2025/include/GameState.hpp \
   /home/dylan/git/GMTK2025/include/MenuState.hpp \
+  /home/dylan/git/GMTK2025/include/PlayState.hpp \
+  /home/dylan/git/GMTK2025/include/Player.hpp \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Graphics/BlendMode.hpp \
@@ -3381,21 +3392,9 @@ CMakeFiles/my_program.dir/src/Player.cpp.o:
 
 /usr/lib/crti.o:
 
-/usr/include/c++/15.1.1/stack:
-
-/usr/include/c++/15.1.1/bits/stl_stack.h:
-
-/usr/include/c++/15.1.1/bits/stl_deque.h:
-
-/usr/include/c++/15.1.1/bits/deque.tcc:
-
-/home/dylan/git/GMTK2025/include/StateManager.hpp:
-
 /home/dylan/git/GMTK2025/src/StateManager.cpp:
 
 /home/dylan/git/GMTK2025/src/PlayState.cpp:
-
-/home/dylan/git/GMTK2025/include/MenuState.hpp:
 
 /home/dylan/git/GMTK2025/src/MenuState.cpp:
 
@@ -3510,6 +3509,8 @@ CMakeFiles/my_program.dir/main.cpp.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o:
 
 /usr/include/c++/15.1.1/stdexcept:
+
+/usr/include/c++/15.1.1/stack:
 
 /usr/include/c++/15.1.1/sstream:
 
@@ -3633,6 +3634,8 @@ CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o:
 
 /usr/include/c++/15.1.1/bits/stl_uninitialized.h:
 
+/usr/include/c++/15.1.1/bits/stl_stack.h:
+
 /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h:
@@ -3641,11 +3644,13 @@ CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o:
 
 /usr/include/c++/15.1.1/bits/stl_function.h:
 
+/usr/include/c++/15.1.1/bits/stl_deque.h:
+
 /usr/include/c++/15.1.1/tr1/hypergeometric.tcc:
 
 /usr/include/c++/15.1.1/bits/stl_construct.h:
 
-/usr/include/bits/stdint-least.h:
+/usr/include/c++/15.1.1/bits/stl_bvector.h:
 
 /usr/include/stdint.h:
 
@@ -3713,8 +3718,6 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/alloca.h:
 
-/usr/include/c++/15.1.1/bits/fs_path.h:
-
 /usr/include/SFML/Window/WindowHandle.hpp:
 
 /usr/include/SFML/Window/WindowEnums.hpp:
@@ -3735,8 +3738,6 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/bits/cpu-set.h:
 
-/usr/include/c++/15.1.1/bits/stl_bvector.h:
-
 /usr/include/SFML/Window/GlResource.hpp:
 
 /usr/include/c++/15.1.1/bits/ostream.h:
@@ -3751,15 +3752,9 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/SFML/System/Vector2.hpp:
 
-/usr/include/bits/posix_opt.h:
+/usr/include/bits/mathcalls.h:
 
-/usr/include/SFML/Graphics/Texture.hpp:
-
-/usr/include/SFML/Window/Event.hpp:
-
-/usr/include/SFML/System/String.inl:
-
-/usr/include/c++/15.1.1/bits/ptr_traits.h:
+/usr/include/c++/15.1.1/bits/refwrap.h:
 
 /usr/include/SFML/Graphics/RenderTarget.hpp:
 
@@ -3783,6 +3778,12 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/SFML/Graphics/Font.hpp:
 
+/home/dylan/git/GMTK2025/include/Utils.hpp:
+
+/usr/include/c++/15.1.1/bits/stl_algobase.h:
+
+/usr/include/SFML/System/Exception.hpp:
+
 /usr/lib/libxcb.so.1:
 
 /usr/include/bits/endian.h:
@@ -3793,10 +3794,6 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/c++/15.1.1/bits/shared_ptr.h:
 
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/asm/errno.h:
-
 /usr/include/SFML/Graphics/CoordinateType.hpp:
 
 /usr/include/SFML/Graphics/Shape.hpp:
@@ -3804,6 +3801,10 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/c++/15.1.1/bits/alloc_traits.h:
+
+/usr/include/SFML/Window/Export.hpp:
+
+/usr/include/SFML/Graphics/Color.inl:
 
 /usr/lib/libbrotlicommon.so.1:
 
@@ -3821,6 +3822,22 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/SFML/System/String.hpp:
 
+/home/dylan/git/GMTK2025/include/StateManager.hpp:
+
+/usr/lib/Scrt1.o:
+
+/usr/include/SFML/Graphics/Drawable.hpp:
+
+/usr/include/bits/locale.h:
+
+/usr/include/SFML/System/MemoryInputStream.hpp:
+
+/usr/include/SFML/Window/Event.inl:
+
+/usr/include/c++/15.1.1/bits/fs_fwd.h:
+
+/usr/include/SFML/Graphics/RenderStates.hpp:
+
 /usr/include/c++/15.1.1/optional:
 
 /usr/include/SFML/System/Err.hpp:
@@ -3830,10 +3847,6 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 /usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc:
 
 /usr/include/SFML/System/Vector3.inl:
-
-/usr/include/SFML/Window/Export.hpp:
-
-/usr/include/SFML/Graphics/Color.inl:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
@@ -3863,21 +3876,7 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /home/dylan/git/GMTK2025/include/GameState.hpp:
 
-/usr/include/bits/floatn.h:
-
-/home/dylan/git/GMTK2025/include/PlayState.hpp:
-
-/usr/include/SFML/Graphics/Transform.inl:
-
-/usr/include/asm/posix_types_64.h:
-
-/usr/include/SFML/Window/Context.hpp:
-
-/usr/include/c++/15.1.1/bits/concept_check.h:
-
-/usr/include/SFML/System.hpp:
-
-/usr/include/SFML/Graphics/Color.hpp:
+/usr/include/bits/stdint-least.h:
 
 /usr/include/SFML/System/Angle.inl:
 
@@ -3889,19 +3888,27 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/c++/15.1.1/bits/exception_defines.h:
 
-/usr/include/SFML/Graphics/Rect.hpp:
+/usr/include/bits/floatn.h:
 
-/usr/include/bits/types/struct_tm.h:
+/home/dylan/git/GMTK2025/include/PlayState.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
+/usr/include/SFML/Graphics/Transform.inl:
 
-/usr/include/sys/cdefs.h:
+/home/dylan/git/GMTK2025/include/MenuState.hpp:
 
-/usr/include/SFML/Graphics/RenderTexture.hpp:
+/usr/include/SFML/Graphics/Transformable.hpp:
 
-/usr/include/SFML/Config.hpp:
+/usr/include/SFML/Graphics/View.hpp:
 
-/home/dylan/git/GMTK2025/include/Alien.hpp:
+/usr/include/asm/posix_types_64.h:
+
+/usr/include/SFML/Window/Context.hpp:
+
+/usr/include/c++/15.1.1/bits/concept_check.h:
+
+/usr/include/SFML/System.hpp:
+
+/usr/include/SFML/Graphics/Color.hpp:
 
 /usr/include/SFML/Graphics/Export.hpp:
 
@@ -3909,31 +3916,33 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/SFML/Graphics/ConvexShape.hpp:
 
-/usr/lib/Scrt1.o:
+/usr/include/SFML/Graphics/Rect.hpp:
 
-/usr/include/SFML/Graphics/Drawable.hpp:
+/usr/include/bits/types/struct_tm.h:
 
-/usr/include/SFML/Graphics/View.hpp:
+/usr/include/SFML/Config.hpp:
 
-/usr/include/SFML/Graphics/Transformable.hpp:
+/home/dylan/git/GMTK2025/include/Alien.hpp:
 
-/usr/include/bits/locale.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
 
-/usr/include/SFML/Window/Event.inl:
+/usr/include/sys/cdefs.h:
 
-/usr/include/c++/15.1.1/bits/fs_fwd.h:
+/usr/include/SFML/Graphics/RenderTexture.hpp:
 
-/usr/include/SFML/Graphics/RenderStates.hpp:
+/usr/include/bits/posix_opt.h:
 
-/usr/include/SFML/System/MemoryInputStream.hpp:
+/usr/include/SFML/Graphics/Texture.hpp:
+
+/usr/include/SFML/Window/Event.hpp:
+
+/usr/include/SFML/System/String.inl:
+
+/usr/include/c++/15.1.1/bits/ptr_traits.h:
 
 /usr/lib/libpcre2-8.so.0:
 
 /usr/include/SFML/Graphics/StencilMode.hpp:
-
-/usr/include/asm/types.h:
-
-/usr/include/SFML/System/Clock.hpp:
 
 /usr/include/SFML/Window/Cursor.hpp:
 
@@ -3949,13 +3958,13 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/SFML/Graphics/Vertex.hpp:
 
-/usr/include/bits/setjmp.h:
-
 /usr/include/SFML/System/Utf.inl:
 
-/usr/include/bits/mathcalls.h:
+/usr/include/bits/setjmp.h:
 
-/usr/include/c++/15.1.1/bits/refwrap.h:
+/usr/include/asm/types.h:
+
+/usr/include/SFML/System/Clock.hpp:
 
 /usr/include/c++/15.1.1/utility:
 
@@ -4003,6 +4012,12 @@ CMakeFiles/my_program.dir/src/MenuState.cpp.o:
 
 /usr/include/SFML/System/Time.hpp:
 
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/c++/15.1.1/bits/fs_path.h:
+
 /home/dylan/git/GMTK2025/src/Utils.cpp:
 
 /usr/include/asm/posix_types.h:
@@ -4032,12 +4047,6 @@ CMakeFiles/my_program.dir/src/StateManager.cpp.o:
 /usr/include/bits/struct_rwlock.h:
 
 /usr/include/bits/types/struct_itimerspec.h:
-
-/home/dylan/git/GMTK2025/include/Utils.hpp:
-
-/usr/include/SFML/System/Exception.hpp:
-
-/usr/include/c++/15.1.1/bits/stl_algobase.h:
 
 /usr/include/bits/thread-shared-types.h:
 
@@ -4220,6 +4229,8 @@ CMakeFiles/my_program.dir/src/PlayState.cpp.o:
 /usr/include/bits/types/time_t.h:
 
 /usr/include/c++/15.1.1/bits/cxxabi_forced.h:
+
+/usr/include/c++/15.1.1/bits/deque.tcc:
 
 /usr/lib/libXcursor.so.1:
 
