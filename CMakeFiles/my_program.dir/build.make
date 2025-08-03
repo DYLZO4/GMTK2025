@@ -76,127 +76,127 @@ CMakeFiles/my_program.dir/src/Alien.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/Alien.cpp.o: src/Alien.cpp
 CMakeFiles/my_program.dir/src/Alien.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_program.dir/src/Alien.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/Alien.cpp.o -MF CMakeFiles/my_program.dir/src/Alien.cpp.o.d -o CMakeFiles/my_program.dir/src/Alien.cpp.o -c /home/dylan/git/GMTK2025/src/Alien.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/Alien.cpp.o -MF CMakeFiles/my_program.dir/src/Alien.cpp.o.d -o CMakeFiles/my_program.dir/src/Alien.cpp.o -c /home/dylan/git/GMTK2025/src/Alien.cpp
 
 CMakeFiles/my_program.dir/src/Alien.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/Alien.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/Alien.cpp > CMakeFiles/my_program.dir/src/Alien.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/Alien.cpp > CMakeFiles/my_program.dir/src/Alien.cpp.i
 
 CMakeFiles/my_program.dir/src/Alien.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/Alien.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/Alien.cpp -o CMakeFiles/my_program.dir/src/Alien.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/Alien.cpp -o CMakeFiles/my_program.dir/src/Alien.cpp.s
 
 CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o: src/AnchorPoint.cpp
 CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o -MF CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o.d -o CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o -c /home/dylan/git/GMTK2025/src/AnchorPoint.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o -MF CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o.d -o CMakeFiles/my_program.dir/src/AnchorPoint.cpp.o -c /home/dylan/git/GMTK2025/src/AnchorPoint.cpp
 
 CMakeFiles/my_program.dir/src/AnchorPoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/AnchorPoint.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/AnchorPoint.cpp > CMakeFiles/my_program.dir/src/AnchorPoint.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/AnchorPoint.cpp > CMakeFiles/my_program.dir/src/AnchorPoint.cpp.i
 
 CMakeFiles/my_program.dir/src/AnchorPoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/AnchorPoint.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/AnchorPoint.cpp -o CMakeFiles/my_program.dir/src/AnchorPoint.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/AnchorPoint.cpp -o CMakeFiles/my_program.dir/src/AnchorPoint.cpp.s
 
 CMakeFiles/my_program.dir/src/GameOverState.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/GameOverState.cpp.o: src/GameOverState.cpp
 CMakeFiles/my_program.dir/src/GameOverState.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_program.dir/src/GameOverState.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/GameOverState.cpp.o -MF CMakeFiles/my_program.dir/src/GameOverState.cpp.o.d -o CMakeFiles/my_program.dir/src/GameOverState.cpp.o -c /home/dylan/git/GMTK2025/src/GameOverState.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/GameOverState.cpp.o -MF CMakeFiles/my_program.dir/src/GameOverState.cpp.o.d -o CMakeFiles/my_program.dir/src/GameOverState.cpp.o -c /home/dylan/git/GMTK2025/src/GameOverState.cpp
 
 CMakeFiles/my_program.dir/src/GameOverState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/GameOverState.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/GameOverState.cpp > CMakeFiles/my_program.dir/src/GameOverState.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/GameOverState.cpp > CMakeFiles/my_program.dir/src/GameOverState.cpp.i
 
 CMakeFiles/my_program.dir/src/GameOverState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/GameOverState.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/GameOverState.cpp -o CMakeFiles/my_program.dir/src/GameOverState.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/GameOverState.cpp -o CMakeFiles/my_program.dir/src/GameOverState.cpp.s
 
 CMakeFiles/my_program.dir/src/MenuState.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/MenuState.cpp.o: src/MenuState.cpp
 CMakeFiles/my_program.dir/src/MenuState.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_program.dir/src/MenuState.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/MenuState.cpp.o -MF CMakeFiles/my_program.dir/src/MenuState.cpp.o.d -o CMakeFiles/my_program.dir/src/MenuState.cpp.o -c /home/dylan/git/GMTK2025/src/MenuState.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/MenuState.cpp.o -MF CMakeFiles/my_program.dir/src/MenuState.cpp.o.d -o CMakeFiles/my_program.dir/src/MenuState.cpp.o -c /home/dylan/git/GMTK2025/src/MenuState.cpp
 
 CMakeFiles/my_program.dir/src/MenuState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/MenuState.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/MenuState.cpp > CMakeFiles/my_program.dir/src/MenuState.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/MenuState.cpp > CMakeFiles/my_program.dir/src/MenuState.cpp.i
 
 CMakeFiles/my_program.dir/src/MenuState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/MenuState.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/MenuState.cpp -o CMakeFiles/my_program.dir/src/MenuState.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/MenuState.cpp -o CMakeFiles/my_program.dir/src/MenuState.cpp.s
 
 CMakeFiles/my_program.dir/src/PlayState.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/PlayState.cpp.o: src/PlayState.cpp
 CMakeFiles/my_program.dir/src/PlayState.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_program.dir/src/PlayState.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/PlayState.cpp.o -MF CMakeFiles/my_program.dir/src/PlayState.cpp.o.d -o CMakeFiles/my_program.dir/src/PlayState.cpp.o -c /home/dylan/git/GMTK2025/src/PlayState.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/PlayState.cpp.o -MF CMakeFiles/my_program.dir/src/PlayState.cpp.o.d -o CMakeFiles/my_program.dir/src/PlayState.cpp.o -c /home/dylan/git/GMTK2025/src/PlayState.cpp
 
 CMakeFiles/my_program.dir/src/PlayState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/PlayState.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/PlayState.cpp > CMakeFiles/my_program.dir/src/PlayState.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/PlayState.cpp > CMakeFiles/my_program.dir/src/PlayState.cpp.i
 
 CMakeFiles/my_program.dir/src/PlayState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/PlayState.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/PlayState.cpp -o CMakeFiles/my_program.dir/src/PlayState.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/PlayState.cpp -o CMakeFiles/my_program.dir/src/PlayState.cpp.s
 
 CMakeFiles/my_program.dir/src/Player.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/Player.cpp.o: src/Player.cpp
 CMakeFiles/my_program.dir/src/Player.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_program.dir/src/Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/Player.cpp.o -MF CMakeFiles/my_program.dir/src/Player.cpp.o.d -o CMakeFiles/my_program.dir/src/Player.cpp.o -c /home/dylan/git/GMTK2025/src/Player.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/Player.cpp.o -MF CMakeFiles/my_program.dir/src/Player.cpp.o.d -o CMakeFiles/my_program.dir/src/Player.cpp.o -c /home/dylan/git/GMTK2025/src/Player.cpp
 
 CMakeFiles/my_program.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/Player.cpp > CMakeFiles/my_program.dir/src/Player.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/Player.cpp > CMakeFiles/my_program.dir/src/Player.cpp.i
 
 CMakeFiles/my_program.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/Player.cpp -o CMakeFiles/my_program.dir/src/Player.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/Player.cpp -o CMakeFiles/my_program.dir/src/Player.cpp.s
 
 CMakeFiles/my_program.dir/src/StateManager.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/StateManager.cpp.o: src/StateManager.cpp
 CMakeFiles/my_program.dir/src/StateManager.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/my_program.dir/src/StateManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/StateManager.cpp.o -MF CMakeFiles/my_program.dir/src/StateManager.cpp.o.d -o CMakeFiles/my_program.dir/src/StateManager.cpp.o -c /home/dylan/git/GMTK2025/src/StateManager.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/StateManager.cpp.o -MF CMakeFiles/my_program.dir/src/StateManager.cpp.o.d -o CMakeFiles/my_program.dir/src/StateManager.cpp.o -c /home/dylan/git/GMTK2025/src/StateManager.cpp
 
 CMakeFiles/my_program.dir/src/StateManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/StateManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/StateManager.cpp > CMakeFiles/my_program.dir/src/StateManager.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/StateManager.cpp > CMakeFiles/my_program.dir/src/StateManager.cpp.i
 
 CMakeFiles/my_program.dir/src/StateManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/StateManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/StateManager.cpp -o CMakeFiles/my_program.dir/src/StateManager.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/StateManager.cpp -o CMakeFiles/my_program.dir/src/StateManager.cpp.s
 
 CMakeFiles/my_program.dir/src/Utils.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/Utils.cpp.o: src/Utils.cpp
 CMakeFiles/my_program.dir/src/Utils.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/my_program.dir/src/Utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/Utils.cpp.o -MF CMakeFiles/my_program.dir/src/Utils.cpp.o.d -o CMakeFiles/my_program.dir/src/Utils.cpp.o -c /home/dylan/git/GMTK2025/src/Utils.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/Utils.cpp.o -MF CMakeFiles/my_program.dir/src/Utils.cpp.o.d -o CMakeFiles/my_program.dir/src/Utils.cpp.o -c /home/dylan/git/GMTK2025/src/Utils.cpp
 
 CMakeFiles/my_program.dir/src/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/Utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/Utils.cpp > CMakeFiles/my_program.dir/src/Utils.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/src/Utils.cpp > CMakeFiles/my_program.dir/src/Utils.cpp.i
 
 CMakeFiles/my_program.dir/src/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/Utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/Utils.cpp -o CMakeFiles/my_program.dir/src/Utils.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/src/Utils.cpp -o CMakeFiles/my_program.dir/src/Utils.cpp.s
 
 CMakeFiles/my_program.dir/main.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/main.cpp.o: main.cpp
 CMakeFiles/my_program.dir/main.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/my_program.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/main.cpp.o -MF CMakeFiles/my_program.dir/main.cpp.o.d -o CMakeFiles/my_program.dir/main.cpp.o -c /home/dylan/git/GMTK2025/main.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/main.cpp.o -MF CMakeFiles/my_program.dir/main.cpp.o.d -o CMakeFiles/my_program.dir/main.cpp.o -c /home/dylan/git/GMTK2025/main.cpp
 
 CMakeFiles/my_program.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/main.cpp > CMakeFiles/my_program.dir/main.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/git/GMTK2025/main.cpp > CMakeFiles/my_program.dir/main.cpp.i
 
 CMakeFiles/my_program.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/main.cpp -o CMakeFiles/my_program.dir/main.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/git/GMTK2025/main.cpp -o CMakeFiles/my_program.dir/main.cpp.s
 
 # Object files for target my_program
 my_program_OBJECTS = \
@@ -223,7 +223,6 @@ my_program: CMakeFiles/my_program.dir/src/StateManager.cpp.o
 my_program: CMakeFiles/my_program.dir/src/Utils.cpp.o
 my_program: CMakeFiles/my_program.dir/main.cpp.o
 my_program: CMakeFiles/my_program.dir/build.make
-my_program: CMakeFiles/my_program.dir/compiler_depend.ts
 my_program: CMakeFiles/my_program.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dylan/git/GMTK2025/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable my_program"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_program.dir/link.txt --verbose=$(VERBOSE)
